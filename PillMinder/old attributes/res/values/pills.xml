@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PillMinder by Clyde Zuber -->
+<resources>
+    <string-array name="pills_select">
+        <item>&#189; pill</item>
+        <item>One pill</item>
+        <item>Two pills</item>
+        <item>Three pills</item>
+		<item>Four pills</item>
+		<item>Five pills</item>
+		<item>Six pills</item>
+    </string-array>   
+</resources>

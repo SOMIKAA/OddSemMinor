@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.suyash.dell.medicare.contactp"
+    android:background="@drawable/back3">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For any queries regarding our services contact us at:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="8130643070"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" E-mail us at : "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="healthcare@gmail.com"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+
+</RelativeLayout>

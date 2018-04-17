@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PillMinder by Clyde Zuber -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context=".RxLabelActivity" >
+
+ <!-- ************************************************************************* -->   
+    <TextView
+        android:id="@+id/pharmText"
+        style="@style/RxLabel"
+        android:layout_alignParentTop="true"
+        android:text="@string/pharm_text" />
+    
+    <EditText
+        android:id="@+id/etPharmacy"
+        style="@style/RxLabel"
+        android:layout_alignParentTop="true"        
+        android:layout_toRightOf="@+id/pharmText"
+        android:layout_above="@+id/etRxNumber" 
+        android:maxLength="12"       
+        android:inputType="textCapWords"
+        android:hint="@string/pharm_hint" />
+
+    <TextView
+        android:id="@+id/pharmPhoneText"
+        style="@style/RxLabel"
+        android:layout_alignParentTop="true"        
+        android:layout_toRightOf="@+id/etPharmacy"
+        android:layout_above="@+id/etRxNumber"        
+        android:text="@string/pharm_phone_text" />
+    
+    <EditText
+        android:id="@+id/etPharmNumber"
+        style="@style/RxLabelBold"
+        android:layout_alignParentTop="true"        
+		android:layout_toRightOf="@+id/pharmPhoneText"
+        android:layout_above="@+id/etRxNumber"        
+        android:maxLength="12"
+        android:inputType="phone"
+        android:hint="@string/pharm_phone_hint" />
+    
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/rxText"
+        style="@style/RxLabelBold"
+        android:layout_alignLeft="@+id/pharmText"
+        android:layout_below="@+id/pharmText"
+        android:text="@string/rx_text" />
+    
+    <EditText
+        android:id="@+id/etRxNumber"
+        style="@style/RxLabelBold"
+        android:layout_toRightOf="@+id/rxText"
+        android:layout_alignTop="@+id/rxText"
+        android:layout_alignBottom="@+id/rxText"
+        android:maxLength="15"
+        android:inputType="number"
+        android:hint="@string/rx_text" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/drText"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/etRxNumber"
+        android:layout_alignTop="@+id/rxText"
+        android:layout_alignBottom="@+id/rxText"
+        android:text="@string/doctor_text" />
+
+    <EditText
+        android:id="@+id/etDoctor"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/drText"
+        android:layout_alignTop="@+id/rxText"
+        android:layout_alignBottom="@+id/rxText"
+        android:maxLength="20"
+        android:inputType="textCapWords"
+        android:hint="@string/doctor_hint" /> 
+    
+    <TextView
+        android:id="@+id/dispText"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/etDoctor"
+        android:layout_alignTop="@+id/rxText"
+        android:layout_alignBottom="@+id/rxText"
+        android:text="@string/disp_text" />
+
+    <EditText
+        android:id="@+id/etDispensed"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/dispText"
+        android:layout_alignTop="@+id/rxText"
+        android:layout_alignBottom="@+id/rxText"
+        android:layout_alignRight="@+id/etPharmNumber"
+        android:maxLength="8"
+        android:inputType="date"
+        android:hint="@string/disp_hint" />
+        
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/patientText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/pharmText"
+        android:layout_below="@+id/rxText"
+        android:text="@string/temp_name" />
+
+<!-- ************************************************************************* -->    
+
+    <Spinner
+        android:id="@+id/pillsSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pharmText"
+        android:layout_alignRight="@+id/etRxNumber"
+        android:layout_below="@+id/patientText" />    
+    
+    <Spinner
+        android:id="@+id/freqSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pillsSpinner"
+        android:layout_alignTop="@+id/pillsSpinner"
+        android:layout_alignBottom="@+id/pillsSpinner" 
+        android:layout_alignRight="@+id/etDoctor" />
+    
+    
+    <Button
+        android:id="@+id/finishedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_alignLeft="@+id/dispText"
+        android:layout_alignTop="@+id/patientText"
+        android:layout_alignRight="@+id/etPharmNumber"
+        android:text="@string/finished_text" />
+    
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/medText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/pharmText"
+        android:layout_below="@+id/freqSpinner"
+        android:text="@string/med_text" />
+
+    <EditText
+        android:id="@+id/etMedication"
+        style="@style/RxLabelBold"
+        android:layout_toRightOf="@+id/medText"
+        android:layout_alignTop="@+id/medText"
+        android:layout_alignBottom="@+id/medText"
+        android:maxLength="15"
+        android:inputType="textCapCharacters"
+        android:hint="@string/med_hint" />     
+    
+    <TextView
+        android:id="@+id/mgText"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/etMedication"
+        android:layout_alignTop="@+id/medText"
+        android:layout_alignBottom="@+id/medText"
+        android:text="@string/mg_text" />
+    
+    <EditText
+        android:id="@+id/etMG"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/mgText"
+        android:layout_alignTop="@+id/medText"
+        android:layout_alignBottom="@+id/medText"
+        android:maxLength="5"
+        android:inputType="number"
+        android:hint="@string/mg_hint" />
+    
+    <TextView
+        android:id="@+id/qtyText"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/etMG"
+        android:layout_alignTop="@+id/medText"
+        android:layout_alignBottom="@+id/medText"
+        android:text="@string/qty_text" />
+    
+    <EditText
+        android:id="@+id/etQuantity"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/qtyText"
+        android:layout_alignTop="@+id/medText"
+        android:layout_alignBottom="@+id/medText"
+        android:layout_alignRight="@+id/etPharmNumber"
+        android:maxLength="5"
+        android:inputType="number"
+        android:hint="@string/qty_hint" />
+    
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/subText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/pharmText"
+        android:layout_below="@+id/medText"
+        android:text="@string/sub_text" />
+
+    <EditText
+        android:id="@+id/etBrandName"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/subText"
+        android:layout_alignTop="@+id/subText"
+        android:layout_alignBottom="@+id/subText"
+        android:maxLength="15"
+        android:inputType="textCapCharacters"
+        android:hint="@string/sub_hint" />     
+
+<!-- ************************************************************************* -->     
+    
+    <TextView
+        android:id="@+id/refillText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/pharmText"
+        android:layout_below="@+id/subText"
+        android:text="@string/refill_text" />    
+    
+    
+    <EditText
+        android:id="@+id/etRefills"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/refillText"
+        android:layout_alignTop="@+id/refillText"
+        android:layout_alignBottom="@+id/refillText"
+        android:maxLength="2"
+        android:inputType="number"
+        android:hint="@string/refill_hint" />   
+          
+    <TextView
+        android:id="@+id/refill2Text"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/etRefills"
+        android:layout_alignTop="@+id/refillText"
+        android:layout_alignBottom="@+id/refillText"
+        android:text="@string/refill_text2" />  
+
+    <EditText
+        android:id="@+id/etCutoff"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/refill2Text"
+        android:layout_alignTop="@+id/refillText"
+        android:layout_alignBottom="@+id/refillText"
+        android:maxLength="8"
+        android:inputType="date"
+        android:hint="@string/refill_hint2" />        
+    
+<!-- ************************************************************************* -->
+
+    
+</RelativeLayout>

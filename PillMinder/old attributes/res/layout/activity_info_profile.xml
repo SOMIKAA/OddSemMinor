@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PillMinder by Clyde Zuber -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context=".InfoProfileActivity" >
+    
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/defaultText"
+        style="@style/RxLabelBold"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:text="@string/default_text" />    
+    
+ <!-- ************************************************************************* -->   
+    
+    <TextView
+        android:id="@+id/pharmText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/defaultText"
+        android:layout_below="@+id/defaultText"
+        android:text="@string/pharm_text" />
+    
+    <EditText
+        android:id="@+id/etPharmacy"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/pharmText"
+        android:layout_alignTop="@+id/pharmText"
+        android:layout_alignBottom="@+id/pharmText" 
+        android:maxLength="12"       
+        android:inputType="textCapWords"
+        android:hint="@string/pharm_hint" />
+
+    <TextView
+        android:id="@+id/pharmPhoneText"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/etPharmacy"
+        android:layout_alignTop="@+id/pharmText"
+        android:layout_alignBottom="@+id/pharmText" 
+        android:text="@string/pharm_phone_text" />
+    
+    <EditText
+        android:id="@+id/etPharmNumber"
+        style="@style/RxLabelBold"
+		android:layout_toRightOf="@+id/pharmPhoneText"
+		android:layout_alignTop="@+id/pharmText"
+        android:layout_alignBottom="@+id/pharmText" 
+        android:maxLength="12"
+        android:inputType="phone"
+        android:hint="@string/pharm_phone_hint" />
+    
+<!-- ************************************************************************* -->  
+    
+    <TextView
+        android:id="@+id/drText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/defaultText"
+        android:layout_below="@+id/pharmText"
+        android:text="@string/doctor_text" />
+
+    <EditText
+        android:id="@+id/etDoctor"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/drText"
+        android:layout_alignTop="@+id/drText"
+        android:layout_alignBottom="@+id/drText"
+        android:maxLength="20"
+        android:inputType="textCapWords"
+        android:hint="@string/doctor_hint" /> 
+        
+    <Button
+        android:id="@+id/finishedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_alignLeft="@+id/pharmPhoneText"
+        android:layout_toRightOf="@+id/etDoctor"
+        android:layout_alignTop="@+id/drText"
+		android:text="@string/finished_text" />
+    
+        
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/patientText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/defaultText"
+        android:layout_below="@+id/drText"
+        android:text="@string/patient_text" />    
+    
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/lastNameText"
+        style="@style/RxLabel"
+        android:layout_alignLeft="@+id/defaultText"
+        android:layout_below="@+id/patientText"
+        android:text="@string/lastname_text" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/lastNameText"
+        android:layout_alignTop="@+id/lastNameText"
+        android:layout_alignBottom="@+id/lastNameText"
+        android:maxLength="15"
+        android:inputType="textCapWords"
+        android:hint="@string/lastname_hint" /> 
+        
+    <TextView
+        android:id="@+id/firstNameText"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/etLastName"
+        android:layout_alignTop="@+id/lastNameText"
+        android:layout_alignBottom="@+id/lastNameText"
+        android:text="@string/firstname_text" />
+    
+    <EditText
+        android:id="@+id/etFirstName"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/firstNameText"
+        android:layout_alignTop="@+id/lastNameText"
+        android:layout_alignBottom="@+id/lastNameText"
+        android:maxLength="15"
+        android:inputType="textCapWords"
+        android:hint="@string/firstname_hint" />
+         
+    <TextView
+        android:id="@+id/delayText"
+        style="@style/RxLabel"
+		android:layout_toRightOf="@+id/etFirstName"
+        android:layout_alignTop="@+id/lastNameText"
+        android:layout_alignBottom="@+id/lastNameText"
+        android:text="@string/delay_text" />    
+            
+    <EditText
+        android:id="@+id/etDelay"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/delayText"
+        android:layout_alignTop="@+id/lastNameText"
+        android:layout_alignBottom="@+id/lastNameText"
+        android:maxLength="2"
+        android:inputType="number"
+        android:hint="@string/delay_hint" />
+        
+<!-- ************************************************************************* -->    
+    
+    <TextView
+        android:id="@+id/awakeText"
+        style="@style/RxLabel"
+		android:layout_alignLeft="@+id/defaultText"
+        android:layout_below="@+id/lastNameText"
+        android:text="@string/awake_text" />    
+	        
+    <Spinner
+        android:id="@+id/awakeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/awakeText"
+        android:layout_alignTop="@+id/awakeText"
+        android:layout_alignBottom="@+id/awakeText" />
+         
+    <TextView
+        android:id="@+id/sleepText"
+        style="@style/RxLabel"
+        android:layout_toRightOf="@+id/awakeSpinner"
+        android:layout_alignTop="@+id/awakeText"
+        android:layout_alignBottom="@+id/awakeText"
+        android:text="@string/sleep_text" />    
+    
+    <Spinner
+        android:id="@+id/sleepSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sleepText"
+        android:layout_alignTop="@+id/awakeText"
+        android:layout_alignBottom="@+id/awakeText" />
+ 
+<!-- ************************************************************************* --> 
+
+</RelativeLayout>

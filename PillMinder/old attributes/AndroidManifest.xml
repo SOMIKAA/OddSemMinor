@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.elon.cs.pillminder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-feature android:name="android.hardware.camera" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pill_minder"
+        android:label="@string/app_name" >
+        
+        <service android:name="edu.elon.cs.pillminder.PillMinderService" />
+       	
+       	<receiver android:name="edu.elon.cs.pillminder.OnBootCompleted">
+       		<intent-filter>
+       			<action android:name ="android.intent.action.BOOT_COMPLETED" />
+       		</intent-filter>
+       	</receiver>
+
+       	<receiver android:name="edu.elon.cs.pillminder.AlarmReceiver" />
+
+        <activity
+            android:name="edu.elon.cs.pillminder.MinderActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>              
+        </activity>
+        <activity
+            android:name="edu.elon.cs.pillminder.InfoProfileActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="edu.elon.cs.pillminder.RxLabelActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="edu.elon.cs.pillminder.CurrentRxActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="edu.elon.cs.pillminder.DisplayDailyActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="edu.elon.cs.pillminder.HistoryRxActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="edu.elon.cs.pillminder.RecordHistoryActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" 
+            android:theme="@style/AppTheme"
+            android:excludeFromRecents="true" >
+        </activity>
+    </application>
+
+</manifest>

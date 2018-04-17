@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PillMinder by Clyde Zuber -->
+
+<!-- ************************************************************** -->
+<!-- Note: The TextView is filled in by the toString of the class.  -->
+<!-- ************************************************************** -->
+
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ListItem" />

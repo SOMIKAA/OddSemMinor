@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.suyash.dell.medicare.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:background="@drawable/menu_back"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:id="@+id/image1"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="385dp"
+        android:layout_height="510dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/image"
+                android:src="@drawable/logo2"/>
+
+            <TextView
+                android:text="PILL MINDER"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#3c8e8e8e"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" >
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="PILL MINDER"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv1"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:src="@drawable/try1"
+                    android:background="@android:color/white"
+                    android:id="@+id/img1"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:text="PILL MINDER"
+                    />
+
+
+                <TextView
+                    android:text="CONSULT DOCTORS"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv2"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:src="@drawable/dec"
+                    android:background="@android:color/white"
+                    android:layout_width="85dp"
+                    android:id="@+id/img2"
+                    android:layout_height="85dp"
+                    android:text="PILL MINDER"
+                    />
+
+
+
+                <TextView
+                    android:text="PROFILE"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:src="@drawable/pro"
+                    android:background="@android:color/white"
+                    android:layout_width="85dp"
+                    android:id="@+id/img3"
+                    android:layout_height="85dp"
+                    android:text="PILL MINDER"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="SUGGEST EXERCISES"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:src="@drawable/exer"
+                    android:background="@android:color/white"
+                    android:layout_width="85dp"
+                    android:id="@+id/img4"
+                    android:layout_height="85dp"
+                    android:text="PILL MINDER"
+                    />
+
+
+
+                <TextView
+                    android:text="SAVE PRESCRIPTION"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv5"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:src="@drawable/help1"
+                    android:background="@android:color/white"
+                    android:layout_width="85dp"
+                    android:id="@+id/img5"
+                    android:layout_height="85dp"
+                    android:text="PILL MINDER"
+                    />
+
+                <TextView
+                    android:text=" HELP"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:src="@drawable/helpp"
+                    android:background="@android:color/white"
+                    android:layout_width="85dp"
+                    android:id="@+id/img6"
+                    android:layout_height="85dp"
+                    android:text="PILL MINDER"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

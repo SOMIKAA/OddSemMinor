@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PillMinder by Clyde Zuber -->
+<resources>
+    <string-array name="freq_select">
+        <item>Once a day</item>
+        <item>Twice a day</item>
+        <item>Three times a day (Every 8 hours)</item>
+        <item>Every 6 hours (Four times a day)</item>
+        <item>Every 4 hours (Five times a day)</item>
+    </string-array>   
+</resources>

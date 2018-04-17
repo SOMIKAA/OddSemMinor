@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PillMinder by Clyde Zuber -->
+<!-- ************************************************************** -->
+<resources>
+
+    <string name="app_name">PillMinder</string>
+    
+    <!-- menu selection items -->
+    <string name="default_settings">Default Settings</string>
+    <string name="enter_rx">Enter Prescription</string>
+    <string name="current_rx">Show Current Prescriptions</string>
+    <string name="disp_sched_rx">Show Daily Schedule</string>
+    <string name="disp_meds_rx">Show Daily Medications</string>
+    <string name="history_rx">Show Medication History</string>
+    <string name="alarms_on">Alarms are on</string>
+    <string name="alarms_off">!!! Alarms are OFF !!!</string>
+    
+    <!-- activity_rxlabel (and activity_info_profile where overlap) -->
+    <string name="pharm_text">Pharmacy:</string>
+    <string name="pharm_hint">pharmacy name</string>
+    <string name="pharm_phone_text">Pharmacy Phone#:</string>
+    <string name="pharm_phone_hint">pharmacy telephone number</string>
+    <string name="rx_text">RX#</string>
+    <string name="doctor_text">Dr.</string>
+    <string name="doctor_hint">doctor\'s name</string>
+    <string name="disp_text">Dispensed:</string>
+
+    <string name="disp_hint">date this Rx was dispensed (filled/refilled)</string>
+    <string name="temp_name">Doe, John</string>
+    <string name="finished_text">All Finished</string>
+    <string name="med_text">Medication:</string>
+    <string name="med_hint">medication NAME</string>
+    <string name="mg_text">MG:</string>
+    <string name="mg_hint">pill\'s mg</string>
+    <string name="qty_text">Quantity:</string>
+    <string name="qty_hint">quantity of pills dispensed</string>
+    <string name="sub_text">Sub for</string>
+    <string name="sub_hint">sub for BRAND NAME (if any)</string>
+    <string name="refill_text">May be refilled</string>
+    <string name="refill_hint">number of refills</string>
+    <string name="refill_text2">times before</string>
+    <string name="refill_hint2">date to renew Rx with doctor</string>
+
+    <!-- activity_info_profile -->
+    <string name="default_text">Choose Default Values</string>
+    <string name="patient_text">________ Patient Information ________</string>
+    <string name="lastname_text">Last:</string>
+    <string name="lastname_hint">last name</string>
+    <string name="firstname_text">First:</string>
+    <string name="firstname_hint">first name</string>
+    <string name="awake_text">Wake:</string>
+    <string name="sleep_text">Sleep:</string>
+    <string name="delay_text">Alarm delay:</string>
+    <string name="delay_hint">Minute offset from hour to ring alarm</string>
+    
+    <!-- PillMinderService -->
+    <string name="pill_service_started">PillMinderService Started!</string>
+    <string name="pill_service_stopped">PillMinderService Stopped!</string>
+    
+    <string name="connected_pill_service">Connected to PillMinderService!</string>
+    <string name="disconnected_pill_service">Disconnected from PillMinderService!</string>
+    
+    <!-- Minder explanations -->
+    <string name="explain_default">
+        Begin here! Your wake time determines the start of your entire schedule. 
+    </string>
+    <string name="explain_label">
+        Copy the information from bottle label, then use camera to take picture of pill or bottle. 
+    </string>
+    <string name="explain_current">
+        Display a list of all your current prescriptions. Select: short is detail, long is delete. 
+    </string>    
+    <string name="explain_schedule">
+        Display your medication reminder schedule. Select: short is detail, long is +/- adjustment.
+    </string>
+    <string name="explain_meds">
+        Display your medications and their hours. Select: short is detail, long is +/- adjustment.
+    </string>          
+    <string name="explain_history">
+        Display your reminder responses. Select: short is detail, long to delete entire history.
+    </string>    
+    
+    
+    <!-- common/shared literals -->
+    <string name="mg_period">MG.</string>
+    <string name="mg_suffix">"MG "</string>
+    <string name="of">" of "</string>
+    <string name="okay_dismiss">OK, Dismiss</string>
+    <string name="rx_reminder">Prescription Reminder</string>
+    
+    <!-- CurrentRx OnItemClick/Long dialogs -->
+    <string name="you_take">You take</string>
+    <string name="delete_rx">Delete Prescription</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="you_sure">"Are you sure you want to delete this prescription? You take "</string>
+    
+    <!-- DisplayMeds and DisplaySchedule OnItemClick/Long dialogs -->
+    <string name="detail_reminder">Detail Reminder</string>
+    <string name="at">"At "</string>
+    <string name="taking">" you take "</string>
+    <string name="adj_med">Adjust Medication Schedule</string>
+    <string name="adj_sched">Adjust Schedule</string>
+    <string name="adj_question">MG. What adjustment would you like to make?</string>
+    <string name="adj_later">Take an hour later.</string>
+    <string name="adj_nevermind">Oh, Nevermind.</string> 
+    <string name="adj_earlier">Take an hour earlier.</string>
+
+    <!-- HistoryRx OnItemClick/Long dialogs -->
+    <string name="taken">-Taken</string>
+    <string name="missed">Missed</string>
+    <string name="took">" took "</string>
+    <string name="skipped">" skipped "</string>
+    <string name="hist_reminder">History Reminder</string>
+    <string name="you">You</string>
+    <string name="mg_on">"MG on "</string>
+    <string name="del_hist">Delete History Record</string>
+    <string name="you_sure_hist">Are you sure you want to archive and remove the History of all medications?</string>
+    
+    <!-- RecordHistory OnItemClick/Long dialogs -->
+    <string name="take">"Take "</string>
+    <string name="respond">MG and then respond.</string>
+    <string name="done">I took it!</string>
+    <string name="wait">Wait an hour..</string>
+    <string name="skip">No-Skip it.</string>
+    
+</resources>

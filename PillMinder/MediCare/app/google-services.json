@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "391388283877",
+    "firebase_url": "https://medicare-8e0fe.firebaseio.com",
+    "project_id": "medicare-8e0fe",
+    "storage_bucket": "medicare-8e0fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391388283877:android:eecbb3ea5ab5dbb8",
+        "android_client_info": {
+          "package_name": "com.suyash.dell.medicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391388283877-ifnu2n7mjojdf685lglpe1mjiaf5m8ou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suyash.dell.medicare",
+            "certificate_hash": "6d8bd44e73778428c0fdb1b5803b4311db8aba2f"
+          }
+        },
+        {
+          "client_id": "391388283877-85v721fig75bgmmrc58l2voif2eisash.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPK6KpInA_pZ4emtIHMm8cy_YPuHphJWo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391388283877-85v721fig75bgmmrc58l2voif2eisash.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
